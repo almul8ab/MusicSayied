@@ -43,12 +43,12 @@
       "SUPPORT_GROUP": {
         "description": "معرف كروبك بدون @",
         "required": false,
-        "value": "SafoTheBot"
+        "value": "Jepthon"
       },     
       "UPDATES_CHANNEL": {
         "description": "معرف قناتك بدون @",
         "required": false,
-        "value": "AsmSafone"
+        "value": "Jepthon"
       },
       "REPLY_MESSAGE": {
         "description": "عوفه لتلعب بي",
