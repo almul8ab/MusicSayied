@@ -32,11 +32,11 @@ async def start(client, message):
                 InlineKeyboardButton("❔ اوامر البوت ❔", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("📢 القناة", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                InlineKeyboardButton("المطور 📦", url=f"https://t.me/lMl10l"),
+                InlineKeyboardButton("🧸 القناة", url=f"https://t.me/JepThon"),
+                InlineKeyboardButton("المطور 💻", url=f"https://t.me/lMl10l"),
             ],
             [
-                InlineKeyboardButton("🤖 حول", callback_data="about"),
+                InlineKeyboardButton("حول", callback_data="about"),
                 InlineKeyboardButton("اغلاق 🔒", callback_data="close"),
             ],
             [
@@ -92,11 +92,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("❔ اوامر البوت ❔", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("📢 القناة", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                InlineKeyboardButton("المطور 📦", url=f"https://t.me/lMl10l"),
+                InlineKeyboardButton("🧸 القناة", url=f"https://t.me/JepThon"),
+                InlineKeyboardButton("المطور 💻", url=f"https://t.me/lMl10l"),
             ],
             [
-                InlineKeyboardButton("🤖 حول", callback_data="about"),
+                InlineKeyboardButton("حول", callback_data="about"),
                 InlineKeyboardButton("اغلاق 🔒", callback_data="close"),
             ],
             [
