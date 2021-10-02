@@ -1,8 +1,8 @@
 {
-    "name": "Telegram Video Player Bot",
-    "description": "An Telegram Bot By @Jepthon To Stream Videos in Voice Chat",
+    "name": "بوت تشغيل الفيديوهات والاغاني في المكالمات",
+    "description": "البوت مقدم من سورس @Jepthon",
     "repository": "https://github.com/almul8ab/MusicSayied",
-    "logo": "https://telegra.ph/file/1adba0bdcbcf7d81c8ab8.jpg",
+    "logo": "https://telegra.ph/file/ef115938f65e6dadc1142.jpg",
     "stack": "container",
     "keywords": [
       "telegram",
