@@ -21,15 +21,15 @@
         "required": true
       },
       "API_HASH": {
-        "description": "هنا تخلي الايبي هاشmy.telegram.org/apps",
+        "description": "هنا تخلي الايبي هاش my.telegram.org/apps",
         "required": true
       },
       "BOT_TOKEN": {
-        "description": "هنا حط التوكن بوت من@Botfather",
+        "description": "هنا حط التوكن بوت من @Botfather",
         "required": true
       },
       "SESSION_STRING": {
-        "description": "هها تخلي الكود سترنك تحصله من خلال @genStr_robot",
+        "description": "هنا تخلي الكود سترنك تحصله من خلال @genStr_robot",
         "required": true
       },
       "SUDO_USERS": {
@@ -51,7 +51,7 @@
         "value": "Jepthon"
       },
       "REPLY_MESSAGE": {
-        "description": "عوفه لتلعب بي",
+        "description": "عوفه لاتبعبص بي",
         "value": ".",
         "required": false
       }
