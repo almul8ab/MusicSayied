@@ -29,18 +29,18 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 async def start(client, message):
    buttons = [
             [
-                InlineKeyboardButton("❔ HOW TO USE ME ❔", callback_data="help"),
+                InlineKeyboardButton("❔ اوامر البوت ❔", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("📢 CHANNEL", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                InlineKeyboardButton("SOURCE 📦", url=f"https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("📢 القناة", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton("المطور 📦", url=f"https://github.com/AsmSafone/VideoPlayerBot"),
             ],
             [
-                InlineKeyboardButton("🤖 ABOUT", callback_data="about"),
-                InlineKeyboardButton("CLOSE 🔒", callback_data="close"),
+                InlineKeyboardButton("🤖 حول", callback_data="about"),
+                InlineKeyboardButton("اغلاق 🔒", callback_data="close"),
             ],
             [
-               InlineKeyboardButton("➕ ADD ME TO YOUR GROUP ➕", url=f"https://t.me/{USERNAME}?startgroup=true"),
+               InlineKeyboardButton("➕ أضفني الى مجموعتك ➕", url=f"https://t.me/{USERNAME}?startgroup=true"),
             ]
             ]
    reply_markup = InlineKeyboardMarkup(buttons)
@@ -57,8 +57,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     if query.data=="help":
         buttons = [
             [
-                InlineKeyboardButton("🔙 BACK", callback_data="start"),
-                InlineKeyboardButton ("SUPPORT 💬", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("🔙 رجوع", callback_data="start"),
+                InlineKeyboardButton ("كروب المجموعة 💬", url=f"https://t.me/{SUPPORT_GROUP}"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -73,8 +73,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="about":
         buttons = [
             [
-                InlineKeyboardButton("🔙 BACK", callback_data="start"),
-                InlineKeyboardButton ("SUPPORT 💬", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("🔙 الرجوع", callback_data="start"),
+                InlineKeyboardButton ("كروب المجموعة 💬", url=f"https://t.me/{SUPPORT_GROUP}"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -89,18 +89,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="start":
         buttons = [
             [
-                InlineKeyboardButton("❔ HOW TO USE ME ❔", callback_data="help"),
+                InlineKeyboardButton("❔ اوامر البوت ❔", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("📢 CHANNEL", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                InlineKeyboardButton("SOURCE 📦", url=f"https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("📢 القناة", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton("المطور 📦", url=f"https://github.com/AsmSafone/VideoPlayerBot"),
             ],
             [
-                InlineKeyboardButton("🤖 ABOUT", callback_data="about"),
-                InlineKeyboardButton("CLOSE 🔒", callback_data="close"),
+                InlineKeyboardButton("🤖 حول", callback_data="about"),
+                InlineKeyboardButton("اغلاق 🔒", callback_data="close"),
             ],
             [
-               InlineKeyboardButton("➕ ADD ME TO YOUR GROUP ➕", url=f"https://t.me/{USERNAME}?startgroup=true"),
+               InlineKeyboardButton("➕ أضفني الى مجموعتك ➕", url=f"https://t.me/{USERNAME}?startgroup=true"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
