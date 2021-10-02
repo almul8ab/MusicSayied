@@ -33,7 +33,7 @@ async def start(client, message):
             ],
             [
                 InlineKeyboardButton("📢 القناة", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                InlineKeyboardButton("المطور 📦", url=f"https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("المطور 📦", url=f"https://t.me/lMl10l"),
             ],
             [
                 InlineKeyboardButton("🤖 حول", callback_data="about"),
@@ -50,7 +50,7 @@ async def start(client, message):
           reply_markup=reply_markup
        )
    else:
-      await message.reply_text(f"**{BOT_NAME} is Alive !** ✨")
+      await message.reply_text(f"**{BOT_NAME} شغال الان !** ✨")
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
@@ -93,7 +93,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],
             [
                 InlineKeyboardButton("📢 القناة", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                InlineKeyboardButton("المطور 📦", url=f"https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("المطور 📦", url=f"https://t.me/lMl10l"),
             ],
             [
                 InlineKeyboardButton("🤖 حول", callback_data="about"),
