@@ -1,7 +1,7 @@
 {
     "name": "Telegram Video Player Bot",
-    "description": "An Telegram Bot By @AsmSafone To Stream Videos in Voice Chat",
-    "repository": "https://github.com/AsmSafone/VideoPlayerBot",
+    "description": "An Telegram Bot By @Jepthon To Stream Videos in Voice Chat",
+    "repository": "https://github.com/almul8ab/MusicSayied",
     "logo": "https://telegra.ph/file/1adba0bdcbcf7d81c8ab8.jpg",
     "stack": "container",
     "keywords": [
@@ -17,42 +17,42 @@
     ],
     "env": {
       "API_ID": {
-        "description": "User Account Telegram API_ID get it from my.telegram.org/apps",
+        "description": "هنا تخلي الايبي ايدي تحصله من my.telegram.org/apps",
         "required": true
       },
       "API_HASH": {
-        "description": "User Account Telegram API_HASH get it from my.telegram.org/apps",
+        "description": "هنا تخلي الايبي هاشmy.telegram.org/apps",
         "required": true
       },
       "BOT_TOKEN": {
-        "description": "Your Telegram Bot Token, get it from @Botfather XD",
+        "description": "هنا حط التوكن بوت من@Botfather",
         "required": true
       },
       "SESSION_STRING": {
-        "description": "Pyrogram Session String of User Account, get it from @genStr_robot",
+        "description": "هها تخلي الكود سترنك تحصله من خلال @genStr_robot",
         "required": true
       },
       "SUDO_USERS": {
-        "description": "ID of Sudo Users who can use Admin commands (for multiple users seperated by space)",
+        "description": "ايدي حسابك حتى تكدر تستعمل الاوامر",
         "required": true
       },
       "ASSISTANT_NAME": {
-        "description": "Your Video Player's assistant Username without @.",
+        "description": "معرف حساب المساعد بدون @.",
         "required": true
       },
       "SUPPORT_GROUP": {
-        "description": "Support Group username without @ [Leave this if you don't have one]",
+        "description": "معرف كروبك بدون @",
         "required": false,
         "value": "SafoTheBot"
       },     
       "UPDATES_CHANNEL": {
-        "description": "Updates Channel username without @ [Leave this if you don't have one].",
+        "description": "معرف قناتك بدون @",
         "required": false,
         "value": "AsmSafone"
       },
       "REPLY_MESSAGE": {
-        "description": "A reply message to those who message the USER account in PM. Make it blank if you do not need this feature.",
-        "value": "Hello Sir, I'm a bot to stream videos on telegram voice chat, not having time to chat with you 😂!",
+        "description": "عوفه لتلعب بي",
+        "value": ".",
         "required": false
       }
     },
