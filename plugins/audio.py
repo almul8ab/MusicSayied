@@ -17,21 +17,21 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 @Client.on_message(filters.command(["play", f"play@{USERNAME}"]) & filters.group & ~filters.edited)
 @authorized_users_only
 async def play(client, m: Message):
-    msg = await m.reply_text("🔄 `Processing ...`")
+    msg = await m.reply_text("🔄 `تجهيز ...`")
     chat_id = m.chat.id
     media = m.reply_to_message
     if not media and not ' ' in m.text:
-        await msg.edit("❗ __Send Me An Live Radio Link / YouTube Video Link / Reply To An Audio To Start Audio Streaming!__")
+        await msg.edit("❗ ارسل لي رابط الاغنية او ملف الاغنية / رابط فيديو اليوتيوب / او الرد على الاغنية❗")
 
     elif ' ' in m.text:
         text = m.text.split(' ', 1)
         query = text[1]
         if not 'http' in query:
-            return await msg.edit("❗ __Send Me An Live Stream Link / YouTube Video Link / Reply To An Video To Start Video Streaming!__")
+            return await msg.edit("❗ ارسل لي رابط الفيديو / رابط فيديو اليوتيوب / او الرد على فيديو لبدء بث الفيديو❗")
         regex = r"^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+"
         match = re.match(regex, query)
         if match:
-            await msg.edit("🔄 `Starting YouTube Audio Stream ...`")
+            await msg.edit("🔄 `بدء تشغيل البث الصوتي على YouTube ...`")
             try:
                 meta = ydl.extract_info(query, download=False)
                 formats = meta.get('formats', [meta])
@@ -39,11 +39,11 @@ async def play(client, m: Message):
                     ytstreamlink = f['url']
                 link = ytstreamlink
             except Exception as e:
-                return await msg.edit(f"❌ **YouTube Download Error !** \n\n`{e}`")
+                return await msg.edit(f"❌ **خطأ تنزيل يوتيوب !** \n\n`{e}`")
                 print(e)
 
         else:
-            await msg.edit("🔄 `Starting Live Audio Stream ...`")
+            await msg.edit("🔄 `بدء البث الصوتي المباشر ...`")
             link = query
 
         vid_call = VIDEO_CALL.get(chat_id)
@@ -64,7 +64,7 @@ async def play(client, m: Message):
             await group_call.start_audio(link, repeat=False)
             AUDIO_CALL[chat_id] = group_call
             await msg.delete()
-            await m.reply_text(f"▶️ **Started [Audio Streaming]({query}) In {m.chat.title} !**",
+            await m.reply_text(f"▶️ **بدأ [Audio Streaming]({query}) In {m.chat.title} !**",
                reply_markup=InlineKeyboardMarkup(
                [
                    [
@@ -84,11 +84,11 @@ async def play(client, m: Message):
                ]),
             )
         except Exception as e:
-            await msg.edit(f"❌ **An Error Occoured !** \n\nError: `{e}`")
+            await msg.edit(f"❌ **حدث خطأ!** \n\nError: `{e}`")
             return await group_call.stop()
 
     elif media.audio or media.document:
-        await msg.edit("🔄 `Downloading ...`")
+        await msg.edit("🔄 `جار التحميل ...`")
         audio = await client.download_media(media)
 
         vid_call = VIDEO_CALL.get(chat_id)
@@ -109,7 +109,7 @@ async def play(client, m: Message):
             await group_call.start_audio(audio, repeat=False)
             AUDIO_CALL[chat_id] = group_call
             await msg.delete()
-            await m.reply_text(f"▶️ **Started [Audio Streaming](https://t.me/AsmSafone) In {m.chat.title} !**",
+            await m.reply_text(f"▶️ **بدأ [Audio Streaming](https://t.me/JepThon) In {m.chat.title} !**",
                reply_markup=InlineKeyboardMarkup(
                [
                    [
@@ -129,20 +129,20 @@ async def play(client, m: Message):
                ]),
             )
         except Exception as e:
-            await msg.edit(f"❌ **An Error Occoured !** \n\nError: `{e}`")
+            await msg.edit(f"❌ **حدث خطأ !** \n\nError: `{e}`")
             return await group_call.stop()
 
     else:
         await msg.edit(
-            "💁🏻‍♂️ Do you want to search for a YouTube song?",
+            "💁🏻‍♂️ هل تريد البحث عن أغنية على YouTube?",
             reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "✅ Yes", switch_inline_query_current_chat=""
+                        "✅ نعم", switch_inline_query_current_chat=""
                     ),
                     InlineKeyboardButton(
-                        "No ❌", callback_data="close"
+                        "لا ❌", callback_data="close"
                     )
                 ]
             ]
@@ -153,10 +153,10 @@ async def play(client, m: Message):
 @Client.on_message(filters.command(["restart", f"restart@{USERNAME}"]))
 @sudo_users_only
 async def restart(client, m: Message):
-    k = await m.reply_text("🔄 `Restarting ...`")
+    k = await m.reply_text("🔄 `اعادة تشغيل ...`")
     await sleep(3)
     os.execl(sys.executable, sys.executable, *sys.argv)
     try:
-        await k.edit("✅ **Restarted Successfully! \nJoin @AsmSafone For More!**")
+        await k.edit("✅ **إعادة التشغيل بنجاح! \nيرجى الدخول @Jepthon لعرض التحديثات!**")
     except:
         pass
