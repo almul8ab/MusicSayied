@@ -109,7 +109,7 @@ async def play(client, m: Message):
             await group_call.start_audio(audio, repeat=False)
             AUDIO_CALL[chat_id] = group_call
             await msg.delete()
-            await m.reply_text(f"▶️ **بدأ [Audio Streaming](https://t.me/JepThon) In {m.chat.title} !**",
+            await m.reply_text(f"▶️ **بدأ [البث الصوتي](https://t.me/JepThon) In {m.chat.title} !**",
                reply_markup=InlineKeyboardMarkup(
                [
                    [
