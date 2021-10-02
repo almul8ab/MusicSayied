@@ -12,7 +12,7 @@
 [![Bot Updates](https://img.shields.io/badge/VideoPlayerBot-Updates%20Channel-green)](https://t.me/AsmSafone)
 [![Bot Support](https://img.shields.io/badge/VideoPlayerBot-Support%20Group-blue)](https://t.me/safothebot)
 
-An Telegram Bot By [@lMl10l](https://t.me/JepThon) To Stream Videos in Telegram Voice Chat.
+بوت تشغيل الاغاني من قبل [@lMl10l](https://t.me/JepThon).
 
 ## Main Features
 
