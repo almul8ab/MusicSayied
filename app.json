@@ -1,8 +1,9 @@
+
 {
-    "name": "بوت تشغيل الفيديوهات والاغاني في المكالمات",
-    "description": "البوت مقدم من سورس @Jepthon",
+    "name": "احذرو التقليد @jepthon",
+    "description": "بوت تشغيل الاغاني والفيدرهات في المكالمات من قبل جيبثون @Jepthon",
     "repository": "https://github.com/almul8ab/MusicSayied",
-    "logo": "https://telegra.ph/file/ef115938f65e6dadc1142.jpg",
+    "logo": "https://telegra.ph/file/1adba0bdcbcf7d81c8ab8.jpg",
     "stack": "container",
     "keywords": [
       "telegram",
@@ -17,42 +18,42 @@
     ],
     "env": {
       "API_ID": {
-        "description": "هنا تخلي الايبي ايدي تحصله من my.telegram.org/apps",
+        "description": "User Account Telegram API_ID get it from my.telegram.org/apps",
         "required": true
       },
       "API_HASH": {
-        "description": "هنا تخلي الايبي هاش my.telegram.org/apps",
+        "description": "User Account Telegram API_HASH get it from my.telegram.org/apps",
         "required": true
       },
       "BOT_TOKEN": {
-        "description": "هنا حط التوكن بوت من @Botfather",
+        "description": "Your Telegram Bot Token, get it from @Botfather XD",
         "required": true
       },
       "SESSION_STRING": {
-        "description": "هنا تخلي الكود سترنك تحصله من خلال @genStr_robot",
+        "description": "Pyrogram Session String of User Account, get it from @genStr_robot",
         "required": true
       },
       "SUDO_USERS": {
-        "description": "ايدي حسابك حتى تكدر تستعمل الاوامر",
+        "description": "ID of Sudo Users who can use Admin commands (for multiple users seperated by space)",
         "required": true
       },
       "ASSISTANT_NAME": {
-        "description": "معرف حساب المساعد بدون @.",
+        "description": "Your Video Player's assistant Username without @.",
         "required": true
       },
       "SUPPORT_GROUP": {
-        "description": "معرف كروبك بدون @",
+        "description": "Support Group username without @ [Leave this if you don't have one]",
         "required": false,
-        "value": "Jepthon"
+        "value": "SafoTheBot"
       },     
       "UPDATES_CHANNEL": {
-        "description": "معرف قناتك بدون @",
+        "description": "Updates Channel username without @ [Leave this if you don't have one].",
         "required": false,
-        "value": "Jepthon"
+        "value": "AsmSafone"
       },
       "REPLY_MESSAGE": {
-        "description": "عوفه لاتبعبص بي",
-        "value": ".",
+        "description": "A reply message to those who message the USER account in PM. Make it blank if you do not need this feature.",
+        "value": "Hello Sir, I'm a bot to stream videos on telegram voice chat, not having time to chat with you 😂!",
         "required": false
       }
     },
