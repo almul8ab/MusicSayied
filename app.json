@@ -1,7 +1,7 @@
 {
     "name": "بوت تشغيل الفيديوهات والاغاني في المكالمات",
     "description": "البوت مقدم من سورس @Jepthon",
-    "repository": "جيبثون الاول في العراق @Jepthon",
+    "repository": "https://github.com/almul8ab/MusicSayied",
     "logo": "https://telegra.ph/file/ef115938f65e6dadc1142.jpg",
     "stack": "container",
     "keywords": [
